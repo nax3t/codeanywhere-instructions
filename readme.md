@@ -1,9 +1,9 @@
 # CodeAnywhere Instructions
 
 - Sign up for a free account at [https://codeanywhere.com/signup](https://codeanywhere.com/signup)
-- Create a new project and name it aything
-- Open the project
-- When prompted to create a container
+- Go to your email and activate your account
+- Click the link to go to the editor
+- When prompted to create a container with the connection wizard
 	- Name the container anything
 	- Select the MEAN Stack container template for Ubuntu 14.04
 	- Create the container and wait for it to deploy
@@ -38,4 +38,38 @@ chmod 755 setup.sh ;
 - Right click the name of your container from the left hand file menu and select 'Restart'
 - Let the container restart and you should now have an empty container with the latest versions of node and mongodb installed
 
+# Testing out Node and Express JS
 
+*Note: Feel free to skip this section and return later once Colt introduces Express JS*
+
+- Once the container is restarted type the following into the terminal:
+
+```
+touch index.js
+npm init -y
+```
+
+- Now right click the container/connection name from the left hand menu and click 'Refresh'
+	- If the index.js file doesn't appear (along with a package.json file) then right click and 'Restart' the container
+- Double click index.js from the left hand menu to open it in the editor then paste in the following:
+
+```
+var express = require('express');
+var app = express();
+
+app.get('/', function(req, res) {
+  res.send('Is this thing on?');
+});
+
+app.listen(3000, function() {
+  console.log('Server listening on port 3000');
+});
+```
+
+- Save the file then open the terminal tab and type in `npm i express`
+- Now start the server with `node index.js`
+- Right click the container name and select 'Info'
+- From the info file click the link beneath where it says "To access your application over HTTPS, make sure your application is running on port 3000 and use the following link:"
+- This should open a new browser tab with a page that says 'Is this thing on?' in the top left corner
+- If the page loaded then node is working as expected
+- Go back into your codeanywhere editor and press `ctrl + c` to shut down the node process
