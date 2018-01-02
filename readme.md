@@ -1,4 +1,4 @@
-# CodeAnywhere Instructions
+# Codeanywhere Setup Instructions
 
 - Sign up for a free account at [https://codeanywhere.com/signup](https://codeanywhere.com/signup)
 - Go to your email and activate your account
