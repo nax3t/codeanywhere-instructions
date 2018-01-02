@@ -1,4 +1,4 @@
-# Codeanywhere Instructions
+# Codeanywhere Setup Instructions
 
 - Sign up for a free account at [https://codeanywhere.com/signup](https://codeanywhere.com/signup)
 - Go to your email and activate your account
@@ -47,7 +47,7 @@ chmod 755 setup.sh ;
 - Now you can run `./mongod` from the ~/workspace directory and mongod will start with --nojournal
 	- This means that journaling with be disabled which saves disk space in your workspace
 
-# Testing out Node and Express JS
+# Testing Node and Express JS
 
 *Note: Feel free to skip this section and return later once Colt introduces Express JS*
 
@@ -81,4 +81,8 @@ app.listen(3000, function() {
 - From the info file click the link beneath where it says "To access your application over HTTPS, make sure your application is running on port 3000 and use the following link:"
 - This should open a new browser tab with a page that says 'Is this thing on?' in the top left corner
 - If the page loaded then node is working as expected
+<<<<<<< HEAD
 - Go back into your codeanywhere editor and press `ctrl + c` to shut down the node process
+=======
+- Go back into your codeanywhere editor and press `ctrl + c` to shut down the node process
+>>>>>>> 8d57ff119ef4edd1c65026de90023ef4bd46b826
