@@ -81,8 +81,4 @@ app.listen(3000, function() {
 - From the info file click the link beneath where it says "To access your application over HTTPS, make sure your application is running on port 3000 and use the following link:"
 - This should open a new browser tab with a page that says 'Is this thing on?' in the top left corner
 - If the page loaded then node is working as expected
-<<<<<<< HEAD
 - Go back into your codeanywhere editor and press `ctrl + c` to shut down the node process
-=======
-- Go back into your codeanywhere editor and press `ctrl + c` to shut down the node process
->>>>>>> 8d57ff119ef4edd1c65026de90023ef4bd46b826
